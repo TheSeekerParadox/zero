@@ -6,6 +6,11 @@
     padding-bottom: 100px;
 } 
 
+.pb-40 {
+    padding-bottom: 40px;
+}
+
+
 .pr-40 {
     padding-right: 40px;
 }
@@ -14,12 +19,30 @@
     padding-left: 30px;
 }
 
+.firstpart {
+    position: relative;
+}
+
 video {
     width: 100%;
-    height: 100%;
-    z-index: -1;    
+    height: 100%;    
     opacity: 0.7;
+    position: relative;
+    z-index: 0;
 }
+
+.above .sec-title {
+    position:absolute;
+    top:1%;
+    z-index:6;
+    max-width: 100%;
+}
+
+.above .sec-title .title {
+    font-size: 30px;
+    text-align: center;
+}
+
 
 .secondpart {
     .pl-60 {
@@ -87,6 +110,10 @@ video {
     margin-bottom: 60px;
 }
 
+.mb-40 {
+    margin-bottom: 40px;
+}
+
 .mb-50 {
     margin-bottom: 50px;
 }
@@ -99,8 +126,20 @@ video {
     margin-bottom: 30px;
 }
 
+.mr-28 {
+    margin-right: 28px;
+}
+
 .pl-40 {
     padding-left: 40px;
+}
+
+.pl-55 {
+    padding-left: 55px;
+}
+
+.pl-60 {
+    padding-left: 60px;
 }
 
 .text-right {
@@ -108,7 +147,10 @@ video {
 }
 
 @media only screen and (max-width: 991px)
-{.md-mb-30 {
+{.md-mb-10 {
+    margin-bottom: 10px;
+}
+.md-mb-30 {
     margin-bottom: 30px;
 }
 .md-mb-35 {
@@ -120,11 +162,14 @@ video {
 .md-mb-55 {
     margin-bottom: 55px;
 }
+.md-mr-70 {
+    margin-right: 70px;
+}
 .md-mt-55 {
     margin-top: 55px;
 }
-.md-pt-70 {
-    padding-top: 70px;
+.md-pt-50 {
+    padding-top: 50px;
 }
 .md-pb-65 {
     padding-bottom: 65px;
@@ -155,6 +200,9 @@ video {
 }
 .sm-mb-30 {
     margin-bottom: 30px;
+}
+.form-group {
+    flex-direction: column;
 }
 }
 
